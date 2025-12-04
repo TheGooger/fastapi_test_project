@@ -1,0 +1,21 @@
+[project]
+name = "fastapi-test-project"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Vladimir Ivanov",email = "vladimir.ivanov1307@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi (>=0.123.8,<0.124.0)",
+    "uvicorn (>=0.38.0,<0.39.0)",
+    "sqlalchemy (>=2.0.44,<3.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "fastapi_test_project", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
